@@ -3059,7 +3059,7 @@ function finish() {
 		allowEscapeKey: false,
 		allowOutsideClick: false,
 		// [Mosawi9] Here you can edit you onlick depent of your cpa network - هنا ستعدل الزر على حسب شركة العمولة
-		html: '<span class="swantext LINE1"></span> <br> <div class="ui huge red fluid button verify-btn" style="display: none;" onclick="CPABuildLock();">Verify</div> <br> <div class="spinner"> <div class="rect1"></div> <div class="rect2"></div> <div class="rect3"></div> <div class="rect4"></div> <div class="rect5"></div> </div>'
+		html: '<span class="swantext LINE1"></span> <br> <div class="ui huge red fluid button verify-btn" style="display: none;" onclick="call_locker();">Verify</div> <br> <div class="spinner"> <div class="rect1"></div> <div class="rect2"></div> <div class="rect3"></div> <div class="rect4"></div> <div class="rect5"></div> </div>'
 	})
 	$(".LINE1").html("$.CONNECT(<strong>" + $("#platform").dropdown("get value").toUpperCase() + "</strong>);");
 	setTimeout(function() { $(".LINE1").html("$.(" + $("#platform").dropdown("get value").toUpperCase() + ").SEARCH(<strong>" + $("#username").val().toUpperCase() + "</strong>);") }, 3000);
